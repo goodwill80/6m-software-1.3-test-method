@@ -16,8 +16,10 @@ const studentList = [
 ];
 
 function printStudentNames() {
-  for (let i = 0; i < studentList.length; i++) {
+  let i = 0;
+  while (i < studentList.length) {
     console.log(studentList[i]);
+    i++;
   }
 }
 

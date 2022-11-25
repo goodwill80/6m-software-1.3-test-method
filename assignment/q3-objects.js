@@ -31,8 +31,9 @@ function convert(keyArr, valueArr) {
     */
   let obj = {};
   for (let i = 0; i < keyArr.length; i++) {
-    // obj[keyArr[i]] = valueArr[i]; // Alternate method
-    obj = { ...obj, [keyArr[i]]: valueArr[i] }; // as the key is String, we need to use obj[] instead of dot
+    // obj[keyArr[i]] = valueArr[i];
+    // as the key is String, we need to use obj[] instead of dot
+    obj = { ...obj, [keyArr[i]]: valueArr[i] };
   }
   return obj;
 }
