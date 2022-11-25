@@ -7,9 +7,25 @@
     
 */
 
-const env = "DEV"; // Toggle between these possible values "DEV" | "STAGE" | "PROD"
-const databaseCredential = "devuser:password";
+const checkEnv = (env) => {
+  switch (env) {
+    case 'STAGE':
+      return 'stageuser:password';
+      break;
+    case 'PROD':
+      return 'produser:password';
+      break;
+    default:
+      return 'databaseCredential';
+  }
+};
+
+const env = 'DEV'; // Toggle between these possible values "DEV" | "STAGE" | "PROD"
+const databaseCredential = checkEnv(env);
+// console.log(databaseCredential);
 
 // Task: Add code here
 
-console.log(`Database credential for environment ${env} is ${databaseCredential}`);
+console.log(
+  `Database credential for environment ${env} is ${databaseCredential}`
+);
