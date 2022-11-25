@@ -4,16 +4,27 @@
     - Print each student's name inside the loop using console.log().
 */
 
-const studentList = ["Johnson", "Christina", "Michael", "Lina", "Larry", "Michelle", "Bob", "Wilson"]
+const studentList = [
+  'Johnson',
+  'Christina',
+  'Michael',
+  'Lina',
+  'Larry',
+  'Michelle',
+  'Bob',
+  'Wilson',
+];
 
-function printStudentNames(){
-    // Add code here
+function printStudentNames(arr) {
+  arr.forEach((element) => {
+    console.log(element);
+  });
 }
 
-printStudentNames();
+printStudentNames(studentList);
 
 // Ignore the code below this line
 module.exports = {
-    studentList,
-    printStudentNames
-}
+  studentList,
+  printStudentNames,
+};
