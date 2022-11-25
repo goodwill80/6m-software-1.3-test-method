@@ -15,13 +15,13 @@ const studentList = [
   'Wilson',
 ];
 
-function printStudentNames(arr) {
-  arr.forEach((element) => {
-    console.log(element);
-  });
+function printStudentNames() {
+  for (let i = 0; i < studentList.length; i++) {
+    console.log(studentList[i]);
+  }
 }
 
-printStudentNames(studentList);
+printStudentNames();
 
 // Ignore the code below this line
 module.exports = {
